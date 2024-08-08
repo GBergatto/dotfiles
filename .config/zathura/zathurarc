@@ -1,0 +1,25 @@
+set sandbox none # fix links
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 1
+set selection-clipboard clipboard
+map u scroll half-up
+map d scroll half-down
+map r reload
+map R rotate
+map i recolor
+map p print
+map g goto top
+
+map <C-m> feedkeys ":bmark"
+map <C-l> feedkeys ":blist <Tab>"
+
+#set recolor true
+set default-bg "#2f343f"
+set default-fg "#c90076"
+
+#set recolor "true"
+set recolor-lightcolor "#181a21"
+set recolor-darkcolor "#E0E0E0"
+set recolor-reverse-video "true"
+set recolor-keephue "true"

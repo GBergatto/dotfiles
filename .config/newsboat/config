@@ -1,0 +1,87 @@
+auto-reload yes
+max-items 50
+reload-threads 200
+
+feedlist-format "%4i %n %8u %t %> %?T?%T&-?"
+# articlelist-format  "%4i %f %D   %?T?|%-17T|  ?%t"
+
+bookmark-cmd /home/gb/scripts/nbBookmark
+bookmark-autopilot yes
+
+browser "brave %u >/dev/null 2>&1 &"
+
+## Feed settings ##
+
+ignore-mode "download"
+ignore-article "https://www.obsidianroundup.org/blog/rss/" "title !~ \"🌠\""
+ignore-article "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFVls1GmFKf6WlTraIb_IaJg" "title =~ \"Chat With Patrons\""
+ignore-article "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFVls1GmFKf6WlTraIb_IaJg" "title =~ \"Installation and First Look\""
+ignore-article "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFODHrzPMGbNv67e84WDZhQQ" "title =~ \"This video originally appeared on our German channel Simplicissimus\""
+ignore-article "https://www.youtube.com/feeds/videos.xml?channel_id=UCPzVjl-zc4pQlkqoVKLa-Tw" "title =~ \"YouTube Stream\""
+ignore-article "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFonJDkGk921yT9hISzFqpzw" "title !~ \"Hard Reset\" or title =~ \"Podcast\""
+ignore-article "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFplt2D0B6Yt2exBADRKEKoQ" "title =~ \"VIAGGIO NEL GUSTO\" or title =~ \"REGIONALE CON GUSTO\" or title =~ \"Marco Sabellico\" or title =~ \"Oggi beviamo\""
+ignore-article "https://planet.ros.org/rss20.xml" "title =~ \"New Packages for\""
+ignore-article "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF-VDfa01El25H9aQzKDNwzQ" "title =~ \"Tablerone Podcast\""
+ignore-article "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF3XTzVzaHQEd30rQbuvCtTQ" "title !~ \"(HBO)\""
+ignore-article "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFLZc32yrTEMxH1ZO-6fKOzA" "title =~ \"Schulz Adventure\""
+
+## FILTERS ##
+
+define-filter "Unread feeds" "unread_count > 0"
+define-filter "Youtube" "feedlink =~ \"https://www.youtube.com/\""
+
+run-on-startup set-filter "unread_count > 0";
+
+## COLORS ##
+
+color listnormal default default
+color listnormal_unread default default bold
+color listfocus black white standout
+color listfocus_unread black white standout bold
+color info blue default reverse
+color article default default
+
+highlight feedlist "---.*---" green default bold
+highlight feedlist ".*0/0.." black default invis
+
+highlight article "(^Feed:.*|^Title:.*|^Author:.*)" cyan default bold
+highlight article "(^Link:.*|^Date:.*)" default default
+highlight article "https?://[^ ]+" green default
+highlight article "^(Title):.*$" blue default
+highlight article "\\[[0-9][0-9]*\\]" magenta default bold
+highlight article "\\[image\\ [0-9]+\\]" green default bold
+highlight article "\\[embedded flash: [0-9][0-9]*\\]" green default bold
+highlight article ":.*\\(link\\)$" cyan default
+highlight article ":.*\\(image\\)$" blue default
+highlight article ":.*\\(embedded flash\\)$" magenta default
+
+## MACROS ##
+
+bind-key j down
+bind-key k up
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key G end
+bind-key g home
+bind-key s sort
+bind-key d pagedown
+bind-key u pageup
+bind-key l open
+bind-key h quit # go back
+bind-key q hard-quit
+bind-key a toggle-article-read
+bind-key n next-unread
+bind-key N prev-unread
+bind-key U show-urls
+unbind-key e
+
+# open video in mpv
+macro y set browser "mpv %u & "; open-in-browser-noninteractively; toggle-article-read; set browser "brave %u"
+
+# download video
+macro d set browser "yt-dlp -i -f mp4 --path '/home/gb/Videos/' --restrict-filenames %u & "; open-in-browser-noninteractively; toggle-article-read; set browser "brave %u"
+
+# bookmark item
+macro i bookmark; toggle-article-read;
+#macro i set browser "alacritty -e /home/gb/scripts/nbBookmark %u" ; open-in-browser ; toggle-article-read; set browser "brave %u"
+
