@@ -11,8 +11,6 @@ from modules.common import mod
 from modules.groups import group_keys, groups  # noqa
 from modules.keys import keys
 from modules.screens import screens
-from modules.lazy_functions import groupbox_toggle_group, groupbox_reset_toggling_group
-from modules.hooks import reset_toggling_on_group_change  # noqa
 
 keys.extend(group_keys)
 screens = screens

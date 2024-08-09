@@ -2,12 +2,6 @@ from libqtile.config import Key
 from libqtile.lazy import lazy
 
 from modules.common import mod, terminal, browser
-from modules.lazy_functions import (
-    move_focus_to_next_screen,
-    move_focus_to_prev_screen,
-    move_window_to_next_screen,
-    move_window_to_prev_screen,
-)
 
 keys = [
 
