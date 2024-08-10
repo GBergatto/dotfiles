@@ -16,7 +16,6 @@ run nm-applet &
 
 #starting user applications at boot time
 nitrogen --restore &
-run dropbox &
 run flameshot &
 run play-with-mpv &
 picom -b &
