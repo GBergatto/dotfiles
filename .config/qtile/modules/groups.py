@@ -4,11 +4,11 @@ from libqtile.lazy import lazy
 from modules.common import mod
 
 group_matches = [
-    ["brave", "brave-browser", "firefox", "Tor Browser", "Navigator"],
+    ["brave", "brave-browser", "firefox", "Tor Browser"],
     ["Alacritty",  "thunar"],
     ["obsidian"],
     ["okular", "mpv"],
-    ["code-oss", "kdenlive", "MATLAB R2023b","MATLAB R2023b - academic use", "sun-awt-X11-XFramePeer","Inkscape", "gimp", "Com.github.xournalpp.xournalpp"],
+    ["code-oss", "kdenlive", "MATLAB R2023b","MATLAB R2023b - academic use", "sun-awt-X11-XFramePeer","Inkscape", "gimp", "Com.github.xournalpp.xournalpp", "Zotero"],
     ["anki", "keepassxc"],
 ]
 
