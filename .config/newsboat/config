@@ -3,7 +3,8 @@ max-items 50
 reload-threads 200
 
 feedlist-format "%4i %n %8u %t %> %?T?%T&-?"
-# articlelist-format  "%4i %f %D   %?T?|%-17T|  ?%t"
+datetime-format "%Y-%m-%d"
+articlelist-format "%4i %f %D %?T?;%-17T; ?%t"
 
 bookmark-cmd /home/gb/scripts/nbBookmark
 bookmark-autopilot yes

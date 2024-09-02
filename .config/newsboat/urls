@@ -2,7 +2,6 @@ https://archlinux.org/feeds/news/ linux "~Arch Linux News"
 https://news.ycombinator.com/rss news interesting # 00
 https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=scirobotics robotics "~Science Robotics"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFYO_jab_esuFRV4b17AJtAw math "~3Blue1Brown"
-https://www.youtube.com/feeds/videos.xml?playlist_id=PLoT-ILvrQ9--DqfAEZSFO4DlEyIGVB4Di survival "~7 vs Wild 3"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFn_qIkTsc0crJo46LtFl0rQ robotics "~aka: Matchstic"
 https://andrewkelley.me/rss.xml coding "~Andrew Kelley"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFLZc32yrTEMxH1ZO-6fKOzA comedy "~Andrew Schulz"
@@ -11,7 +10,7 @@ https://www.youtube.com/feeds/videos.xml?playlist_id=UULFLtOpyx344v-l0kreCSUEFg 
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFH-y44M0pvwaZx2rTq0rJoQ interesting "~BarbascuraX"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFD2chdqVN65MSM5igMZGbaw coding "~Bartek Spitza"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFS0N5baNlQWJCUrhCEo8WlA embedded "~Ben Eater"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCkcnYVAVZQOB-nXHechtXDg finance # Benjamin
+https://www.youtube.com/feeds/videos.xml?channel_id=UCkcnYVAVZQOB-nXHechtXDg finance "~Benjamin"
 https://generalrobots.substack.com/feed robotics "~General Robots by Benjie Holson"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFVchHhgmxsrZpQjrc8B3l2Q "~Bennett Stirton"
 https://gbergatto.github.io/index.xml # Berga
@@ -20,6 +19,7 @@ https://www.youtube.com/feeds/videos.xml?playlist_id=UULFDjpp9fOeGLy754KJvRl10w 
 https://www.youtube.com/feeds/videos.xml?playlist_id=PLTpckNPL1z54pgfqFsOn6fwi6Lev88LXk news "~Breaking Italy"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFVJ2ZV_fi1y3EsB1roSrkhQ cooking "~Bruno Barbieri"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFfhSB16X9MXhzSFe_H7XbHg obsidian "~Bryan Jenks"
+https://www.youtube.com/feeds/videos.xml?playlist_id=UULFPnpt_HVxdyP3a4sOfwUAHg languages "~Casey Kilmore"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULF5CSgrlchwozIeFlacSztHw climbing "~CatalystClimbing"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2C_jShtL725hvbm1arSV9w interesting # CGP Grey
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFU_W0oE_ock8bWKjALiGs8Q self-help "~Charisma on Command"
@@ -32,7 +32,7 @@ https://computer.rip/rss.xml coding "~Computers are bad"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFO_vz_PII2tUJmXlxQN0Eow cooking "~Cucina con Ruben"
 https://marcofoco.com/feed/ coding
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULF3_iSRqqZ7DTVlBNd9lv8jA languages "~Days of French and Swedish"
-https://www.youtube.com/feeds/videos.xml?playlist_id=UULFdH_8mNJ9vzpHwMNwlz88Zw dutch "~De Avondshow met Arjen Lubach"
+https://sive.rs/en.atom "~Derek Sivers"
 https://drewdevault.com/blog/index.xml coding "~Drew DeVault's blog"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFqiKFGkSZwrbMSfkkd2CQGg climbing "~Emil Abrahamsson"
 https://fs.blog/rss/ self-help # Farnam Street
@@ -73,6 +73,7 @@ https://www.youtube.com/feeds/videos.xml?playlist_id=UULFh24_9600fCJemez4RgoOmw 
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFokhfmS5vU-DsN3tDxxneeQ interesting "~MildMan"
 https://mtlynch.io/posts/index.xml coding interesting "~Michael Lynch"
 https://moretothat.com/feed/ self-help # More to that
+https://collabfund.com/feed "~Morgan Housel""
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFBOtZaVafz_5OmUrqJAVStQ "~Mr Rip"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULF-VDfa01El25H9aQzKDNwzQ "~Mr Rip Extra"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULF5oyA-sjeJ9pS89yb4yjINg sport "~Nico Prien"
@@ -86,14 +87,12 @@ https://retireinprogress.com/feed/ interesting finance # Retire In Progress
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFPzVjl-zc4pQlkqoVKLa-Tw interesting "~Robert Marc Lehmann"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCCdoAFxCSeY94Wv2WWuNCng interesting # Roberto Mercadini
 https://www.robotandchisel.com/rss.xml robotics "~Robot & Chisel"
-https://www.youtube.com/feeds/videos.xml?playlist_id=UULFmtyQOKKmrMVaKuRXz02jbQ coding "~Sebastian Lague"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFKGMHVipEvuZudhHD05FOYA interesting "~Simplicissimus"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC6107grRI4m0o2-emgoDnAA interesting "~SmarterEveryDay"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULF3S8vxwRfqLBdIhgRlDRVzw hacking "~Stacksmashing"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFDBaiG0BtHluun67BgXgPRg cars "~StanceWorks"
 https://stratechery.com/feed/ news "~Statechery"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2RCcnTltR3HMQOYVqwmweA coding "~Steve Yegge"
-https://www.strongerbyscience.com/feed/ sport "~Stronger by Science"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFj1VqrHhDte54oLgPG4xpuQ interesting "~Stuff Make Here"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULF3azLjQuz9s5qk76KEXaTvA coding "~suckerpinch"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULFtZO3K2p8mqFwiKWb9k7fXA tech "~TechAltar"
@@ -108,4 +107,5 @@ https://www.youtube.com/feeds/videos.xml?playlist_id=UULFHnyfMqiRRG1u-2MsSQLbXA 
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULF4Cqvm3LRHa2Fuv2m45sIEg coding "~VoxelRifts"
 https://www.youtube.com/feeds/videos.xml?playlist_id=UULF6nSFpj9HTCZ5t-N3Rm3-HA interesting "~Vsauce"
 https://waitbutwhy.com/feed self-help # Wait but why
+https://josvisser.substack.com/feed/ # "Wednesday Wisdom"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsnGwSIHyoYN0kiINAGUKxg tech # Wolfgang's Channel
