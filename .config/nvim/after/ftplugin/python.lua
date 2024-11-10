@@ -6,3 +6,7 @@ local opts = { noremap = true, silent = true }
 -- Run file
 vim.api.nvim_buf_set_keymap(0, 'n', '<F5>', ':wa<CR>:!python %:r.py<CR>', opts)
 
+-- Tab
+vim.opt.tabstop=4
+vim.opt.shiftwidth=4
+vim.opt.expandtab=true
