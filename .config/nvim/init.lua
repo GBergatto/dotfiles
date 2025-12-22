@@ -1,18 +1,38 @@
 require "keymaps"
+require "autocmd"
 require "options"
+require "config.lazy"
 
-require("config.lazy")
+vim.cmd.colorscheme("retrobox")
 
--- [[ Highlight on yank ]]
--- See `:help vim.highligh .on_yank()`
-local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
-vim.api.nvim_create_autocmd('TextYankPost', {
-  callback = function()
-    vim.highlight.on_yank({ higroup = 'Visual', timeout = 150 })
-  end,
-  group = highlight_group,
-  pattern = '*',
+-- TODO: move to lua/config/lsp.lua
+
+-- Enable servers found in ~/.config/lsp/ directory
+vim.lsp.enable({
+   "lua_ls",
+   "clangd",
+   "pyrefly",
+   "jdtls",
+   "svlangserver",
 })
 
--- The line beneath this is called `modeline`. See `:help modeline`
--- vim: ts=2 sts=2 sw=2 et
+-- from https://youtu.be/tdhxpn1XdjQ
+vim.api.nvim_create_autocmd("LspAttach", {
+   callback = function (ev)
+      local client = vim.lsp.get_client_by_id(ev.data.client_id)
+      if client:supports_method("textDocument/completion") then
+         vim.opt.completeopt = {"menu", "menuone", "noinsert", "fuzzy", "popup"}
+         vim.lsp.completion.enable(true, client.id, ev.buf, {autotrigger = true})
+         vim.keymap.set("i", "<C-Space>", function() vim.lsp.completion.get() end)
+      end
+   end
+})
+
+-- Diagnostics
+vim.diagnostic.config({
+   virtual_text = {
+      current_line = true,
+      virt_text_pos = "eol",
+   },
+})
+

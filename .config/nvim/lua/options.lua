@@ -47,3 +47,6 @@ vim.o.virtualedit = "block"
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
 
+-- Set default bolder for floating windows
+vim.o.winborder = "rounded"
+
