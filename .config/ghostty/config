@@ -1,0 +1,66 @@
+# Window
+background-opacity = 1.0
+window-padding-x = 8
+window-padding-y = 6
+window-decoration = none
+window-padding-balance = true
+
+# Colors
+background = #171d23
+foreground = #e4e9ff
+
+# Normal colors
+palette = 0=#15161e
+palette = 1=#f7768e
+palette = 2=#9ece6a
+palette = 3=#e0af68
+palette = 4=#7aa2f7
+palette = 5=#bb9af7
+palette = 6=#7dcfff
+palette = 7=#c0caf5
+
+# Bright colors
+palette = 8=#414868
+palette = 9=#f7768e
+palette = 10=#9ece6a
+palette = 11=#e0af68
+palette = 12=#7aa2f7
+palette = 13=#bb9af7
+palette = 14=#7dcfff
+palette = 15=#c0caf5
+
+# Indexed colors
+palette = 16=#ff9e64
+palette = 17=#db4b4b
+
+# Font
+font-family = Hack
+font-family-bold = Hack
+font-family-italic = Hack
+font-family-bold-italic = monospace
+
+font-style = Regular
+font-style-bold = Bold
+font-style-italic = Italic
+font-style-bold-italic = Bold Italic
+
+font-size = 12
+adjust-cell-height = 1
+
+# Keyboard bindings
+keybind = ctrl+shift+v=paste_from_clipboard
+keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+n=new_window
+
+# Mouse
+mouse-hide-while-typing = true
+cursor-style-blink = false
+
+# Scrollback
+scrollback-limit = 10000000
+
+link-url = true
+clipboard-paste-bracketed-safe = true
+clipboard-trim-trailing-spaces = true
+auto-update = off
+

@@ -31,7 +31,7 @@ background = "0x171d23"
 foreground = "0xe4e9ff"
 
 [font]
-size = 8.0
+size = 12.0
 
 [font.bold]
 family = "hack"
