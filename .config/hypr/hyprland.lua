@@ -221,6 +221,12 @@ hl.bind(mainMod .. " + F",
 hl.bind(mainMod .. " + SHIFT + F",
     hl.dsp.window.fullscreen({ mode = 0 }))
 
+hl.config({
+   binds = {
+      movefocus_cycles_fullscreen = true,
+   }
+})
+
 -- Workspaces
 for i = 1, 10 do
     local key = i % 10
@@ -396,7 +402,7 @@ local workspaceRules = {
 
     [6] = {
         "^(anki)$",
-        "^(KeePassXC)$",
+        "^(org.keepassxc.KeePassXC)$",
     },
 
     [7] = {
